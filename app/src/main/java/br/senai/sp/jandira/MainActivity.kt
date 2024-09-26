@@ -76,7 +76,7 @@ fun Alerta() {
                         .size(width = 170.dp, height = 170.dp)
                 )
                 Text(
-                    text = "Total de acertos: 50%",
+                    text = "Total de acertos: 70%",
                     fontSize = 26.sp,
                     color = Color.Blue,
                     fontWeight = FontWeight.Black,
@@ -94,9 +94,9 @@ fun Alerta() {
                     color = Color.White,
                     shape = RoundedCornerShape(topStart = 20.dp, topEnd = 20.dp)
                 )
-                .padding(16.dp), // Adiciona um padding geral para a tela
+                .padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.SpaceBetween // Espaça o conteúdo entre o topo e o final
+            verticalArrangement = Arrangement.Center // Centraliza os itens verticalmente
         ) {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally
@@ -108,7 +108,7 @@ fun Alerta() {
                     color = Color(0xFF22367C)
                 )
 
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(modifier = Modifier.height(24.dp))
 
                 Text(
                     text = "Infelizmente você não atingiu o nível desejado para ensinar outros estudantes na nossa plataforma :(",
@@ -144,8 +144,7 @@ fun Alerta() {
                 )
             }
 
-            // Adiciona um espaço flexível para controle e ajuste fino
-            Spacer(modifier = Modifier.height(24.dp)) // Suba ou desça ajustando essa altura
+            Spacer(modifier = Modifier.height(48.dp)) // Aumenta o espaço entre o texto e o botão
 
             Button(
                 onClick = { /* Ação do botão */ },
@@ -154,7 +153,6 @@ fun Alerta() {
                 modifier = Modifier
                     .width(160.dp)
                     .height(50.dp)
-                    .padding(bottom = 16.dp) // Controla o espaçamento inferior do botão
             ) {
                 Text(text = "Retornar", color = Color.White, fontWeight = FontWeight.Bold)
             }
